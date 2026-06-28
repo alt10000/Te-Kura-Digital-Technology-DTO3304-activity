@@ -217,3 +217,104 @@ footer p {
     text-align: center;
     color: #68829E;
 }
+
+
+/* Designing the form */
+
+form {
+    width: 75%;
+    margin: 25px auto 0 auto;
+    color: #fff;
+}
+
+form h3 {
+    font-size: 2em;
+    margin: 0 0 25px 0;
+}
+
+form div {
+    margin: 0 0 15px 0;
+    position: relative;
+}
+
+form > div:last-of-type {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px
+}
+
+form input,
+form textarea {
+    padding: 5px 12px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    width: 80%;
+    color: #000000;
+    font-size: .9em;
+    background-color: rgba(255,255,255, .4);
+}
+
+form input[type="submit"] {
+    width: auto;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: .8em;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #598234;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    position: relative;
+    top: -2px;
+}
+
+form input[type="checkbox"] + label {
+    display: inline;
+    padding-left: 10px;
+    font-style: normal;
+}
+
+/* Create a rule that targets the input fields that have a required attribute */
+
+input:required {
+    border: 1px solid #598234;
+}
+
+/* Target the label element that appears straight after an input field that has a required attribute in the HTML */
+
+inpt:required + label {
+    color: #598234;
+}
+
+/* Create a psuedo-element (*) after each of the required labels */
+
+input:required + label::after {
+    content: "required";
+    font-style: italic;
+    padding-left: 10px;
+    font: .8em;
+}
+
+input:required + label::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -25px;
+    display: block;
+    width: 20px;
+    height: 40px;
+    background: url(images/favicon.png) no-repeat 0 0;
+    background-size: contain;
+}
+
+
+
+

@@ -30,6 +30,53 @@
         </div>
     </nav>
 
+    <form>
+        <h3>Contact Us</h3>
+        <p>Please leave us your comments or questions about Beautiful New Zealand.</p>
+
+        <div>
+            <input id="firstname" name="firstname" type="text" required>
+            <label for="firstname">First Name</label>
+        </div>
+
+        <div>
+            <input id="lastname" name="lastname" type="text" required>
+            <label for="lastname">Last Name</label>
+        </div>
+
+        <div>
+            <input id="email" name="email" type="text" required>
+            <label for="email">Email</label>
+        </div>
+
+        <div>
+            <input id="phone" name="phone" type="text" required>
+            <label for="phone">Phone</label>
+        </div>
+
+        <div>
+            <input id="dob" name="dob" type="text" required>
+            <label for="dob">Date of Birth (DD/MM/YYYY)</label>
+        </div>
+
+        <div>
+           <textarea id="message" name="message" rows="5"></textarea> 
+           <label for="message">Comments</label>
+        </div>
+
+        <div>
+            <input id="agree" name="agree" type="checkbox" required>
+            <label for="agree">i agree to terms of service</label>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit" onclick="myFunction()">
+        </div>
+
+    </form>
+
+
+
     <footer>
         <p>AS91893 Develop a Digital Media Outcome 4cr</p>
         <p> &copy; Your Name &#128526; Te Kura </p>
@@ -38,5 +85,6 @@
 
 </body>
 
+    <script src="javascript/formhandler.js"></script>
 
 </html>
