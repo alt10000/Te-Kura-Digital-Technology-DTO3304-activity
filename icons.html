@@ -36,8 +36,77 @@
 
     <h2>New Zealand's Iconic Landscape</h2>
 
-    <p>You can travel the length and breadth of New Zealand and at every turn experience breath taking scenery. Some of New Zealand's famous scenery include Milford Sound, Hobbiton, Tongariro National Park, the McKenzie Country to name a few. Some you can drive to, take a boat to or hike to.</p>
+    <p>You can travel the length and breadth of New Zealand and at every turn experience breath taking scenery. 
+    Some of New Zealand's famous scenery include Milford Sound, Hobbiton, Tongariro National Park, the McKenzie 
+    Country to name a few. Some you can drive to, take a boat to or hike to.</p>
 
+    <!--Container to hold image gallery-->
+    
+    <div class="imgcontainer">
+        <!--Full-width images with numbered text-->
+        <div class="mySlides">
+            <div class="numbertext">1 / 5</div>
+            <img class="slideimage" src="images/Church_Good_Shepherd.jpg" alt="Church of the Good Shepherd">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img class="slideimage" src="images/Milford_Sound.jpg" alt="Milford Sound">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+            <img class="slideimage" src="images/Hobbiton.jpg" alt="Hobbiton">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img class="slideimage" src="images/Sheep.jpg" alt="Grazing Sheet">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+            <img class="slideimage" src="images/Tongariro_Blue_Lake.jpg" alt="Blue Lakes Tongariro">
+        </div>
+
+        <!--Next and previous buttons with unicode for left and right arrows-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+<!--Image text-->
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!--Thumbnail images-->
+        <div class="slideshowrow">
+            <div class="slideshowcolumn">
+                <img class="myThumbnail" src ="images/Church_Good_Shepherd_Thumbnail.jpg" onclick="currentSlide(1)"
+                alt="Church of the Good Shepherd, Lake Tekapo">
+            </div>
+
+            <div class="slideshowcolumn">
+                <img class="myThumbnail" src ="images/Milford_Sound_Thumbnail.jpg" onclick="currentSlide(2)"
+                alt="Milford Sound">
+            </div>
+
+            <div class="slideshowcolumn">
+                <img class="myThumbnail" src ="images/Hobbiton_Thumbnail.jpg" onclick="currentSlide(3)"
+                alt="Hobbiton, Matamata">
+            </div>
+
+            <div class="slideshowcolumn">
+                <img class="myThumbnail" src ="images/Sheep_Thumbnail.jpg" onclick="currentSlide(4)"
+                alt="Sheep, Mckenzie Country">
+            </div>
+
+            <div class="slideshowcolumn">
+                <img class="myThumbnail" src ="images/Tongariro_Blue_Lake_Thumbnail.jpg" onclick="currentSlide(5)"
+                alt="Tongariro Emerald and Blue Lake">
+            </div>
+        </div>
+    </div>
 
 </body>
 
